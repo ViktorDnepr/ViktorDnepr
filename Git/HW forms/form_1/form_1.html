@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Credit card form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="anchor">
+        <a href="../form_1/form_1.html">Задание 1&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../form_2/form_2.html">Задание 2&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../form_3/form_3.html">Задание 3</a>
+          </div>
+    <div class="container">
+        <div class="header">CREDIT CARD DETAILS</div>
+             <form action="page.html" method="POST" autocomplete="on">
+                <div class="cc_form">
+                    <div class="column">
+                        <label for="ccnum">Card  Number</label>
+                        <input type="text" id="ccnum" name="cardnumber" maxlength="16" placeholder="1234 5678 9012 3456" required pattern="\S+[0-9] {16}+" >
+                        <label for="cname">Name On Card</label>
+                        <input type="text" id="cname" name="cardname" maxlength="16" placeholder="Name Surname" pattern="[a-z]" required>
+                    </div>
+                    <div class="line">
+                            <div class="month">
+                                <label for="expmonth">Expiry Date</label>
+                                <input type="text" id="expmonth" name="expmonth" maxlength="2" placeholder="02" pattern="[0-9]" required>
+                            </div>
+                            <div class="year">
+                                <label for="expyear"><p>uuu</p></label>            
+                                <input type="text" id="expyear" name="expyear" maxlength="4" placeholder="2020" pattern="[0-9]" required>
+                            </div>
+                            <div class="cvv">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="***" pattern="[0-9]" required>
+                            </div>                            
+                        </div> 
+                 <div class="pic"><img src="../icons/moon_flag.png" alt="moonflag" width="350px" height="350px"></div>         
+                 </div>
+              </form>
+    </div>     
+</body>
+</html>

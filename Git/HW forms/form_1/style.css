@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(228, 235, 237);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+}
+.anchor {
+    padding-top: 0.5em;
+    width: 100vw;
+    height: 2vw;
+    background-color: white;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    width: 55%;
+    margin: 7% auto;
+    background-color: rgb(132, 181, 176);
+    border-radius: 10px;
+    
+}
+
+.header{
+    position: absolute;
+    width: 60%;
+    background-color: rgb(240, 82, 10);
+    padding: 2% 10%;
+    margin: 5% -5%;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.cc_form{
+    width: 93%;
+    padding: 17% 0 0% 7%;
+    border: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pic{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+input{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid darkslategray;
+    background-color: rgb(123, 176, 171);
+    font-size: 14px;
+}
+
+input:focus{
+    border: 1px solid darkslategrey;
+}
+
+label {
+    margin-bottom: 2vh;
+    display: block;
+    color: darkslategray;
+    font-size: 13px;
+}
+
+.line{
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.month{
+    grid-column: 1;
+}
+
+.year{
+    grid-column: 2;
+}
+
+.cvv{
+    grid-column: 3;
+}
+
+p{
+   color: rgb(132, 181, 176); 
+}
+

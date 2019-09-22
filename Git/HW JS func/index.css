@@ -1,0 +1,14 @@
+a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+}
+.anchor {
+    padding-top: 0.5em;
+    width: 100vw;
+    height: 2vw;
+    background-color: white;
+    text-align: center;
+}

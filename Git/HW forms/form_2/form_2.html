@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+    <title>Forms library</title>
+</head>
+<body>
+    <div class="anchor">
+        <a href="../form_1/form_1.html">Задание 1&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../form_2/form_2.html">Задание 2&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../form_3/form_3.html">Задание 3</a>
+    </div>
+
+<form action="#">
+    <fieldset  class="inputs">
+        <legend>Inputs</legend>
+        <input type="text" class="some_text" placeholder="Enter some text" size="15">
+        <input type="text" class="valid_text" placeholder="valid text" size="15" required pattern="+[0-9]+[a-z]+">
+        <input type="text" class="invalid_text" placeholder="invalid text" size="15" required pattern="\S+[0-9]+">
+    </fieldset>
+    <fieldset class="checkbox">
+        <legend>Check boxes</legend>
+        <input type="checkbox" id="check1" class="hide" checked>
+        <input type="checkbox" id="check2" class="hide" >
+        <div class="border_check1">
+            <label for="check1" class="check1"></label>
+        </div> Subscribe
+        <div class="border_check2">
+            <label for="check2" class="check2"></label>
+        </div> Subscribe
+    </fieldset>
+    <fieldset>
+        <legend>Radio buttons</legend>
+        <input type="radio" id="rad1" name="gender" class="hide" checked>
+        <input type="radio" id="rad2" name="gender" class="hide">
+        <div class="gender_menu">
+            <span class="gender">Gender:</span>
+            <label for="rad1" class="forBut1"><p class="but_text">Male</p></label>
+            <label for="rad2" class="forBut2"><p class="but_text">Female</p></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Buttons</legend>
+        <input type="button" id="but1" class="hide">
+        <input type="button" id="but2" class="hide">
+        <input type="button" id="but3" class="hide">
+        <input type="button" id="but4" class="hide">
+        <input type="button" id="but5" class="hide">
+        <div class="cont_but">
+            <label for="but1" class="but1">Active</label>
+            <label for="but2" class="but2">Danger</label>
+            <label for="but3" class="but3">Disabled</label>
+            <label for="but4" class="but4"></label>
+            <label for="but5" class="but5"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Text area</legend>
+        <textarea name="textarea" placeholder="Enter come text..." cols="auto" rows="auto"></textarea>
+    </fieldset>
+</form>
+</body>
+</html>
